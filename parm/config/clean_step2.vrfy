@@ -30,7 +30,7 @@ echo "BEGIN: $(basename ${BASH_SOURCE[0]})"
 #RUN_MAPS2D:          run to make forecast maps including lat-lon and zonal-mean distributions
 #RUN_MAPSDA:          run to make analysis maps of time-mean increments, ENKF ensemble mean and ensemble spread
 export RUN_GRID2GRID_STEP1="NO"
-export RUN_GRID2GRID_STEP2="NO"
+export RUN_GRID2GRID_STEP2="YES
 export RUN_GRID2OBS_STEP1="NO"
 export RUN_GRID2OBS_STEP2="YES"
 export RUN_PRECIP_STEP1="NO"
@@ -89,7 +89,7 @@ export make_met_data_by="INIT"
 export plot_by="INIT"
 export plot_by="VALID"
 
-export verifytype="g2o"
+export verifytype="all"
 
 
 ## OUTPUT DATA SETTINGS
