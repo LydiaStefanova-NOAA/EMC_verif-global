@@ -338,7 +338,7 @@ def create_job_scripts_step2(start_date_dt, end_date_dt, case, case_abbrev,
         },
         'grid2grid_pres': {
             'SL1L2': {
-                'plot_stats_list': 'bias, rmse, msess, rsd, rmse_md, rmse_pv',
+                'plot_stats_list': 'bias, rmse, rsd, rmse_md, rmse_pv',
                 'interp' : 'NEAREST',
                 'vx_mask_list' : ['NHX', 'SHX', 'PNA', 'TRO'],
                 'var_dict': {
@@ -413,7 +413,7 @@ def create_job_scripts_step2(start_date_dt, end_date_dt, case, case_abbrev,
                 }
             },
             'VL1L2': {
-                'plot_stats_list': 'bias, rmse, msess, rsd, rmse_md, rmse_pv',
+                'plot_stats_list': 'bias, rmse, rsd, rmse_md, rmse_pv',
                 'interp' : 'NEAREST',
                 'vx_mask_list' : ['NHX', 'SHX', 'PNA', 'TRO'],
                 'var_dict': {

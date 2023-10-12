@@ -118,6 +118,7 @@ elif [ $machine = S4 ]; then
         "ERROR: $METplus_version is not supported on $machine"
         exit 1
     fi
+    module load libjpeg
     module load grib_util/1.2.2
     module load prod_util/1.2.1
     module load nco/4.9.3
