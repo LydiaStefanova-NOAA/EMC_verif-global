@@ -55,7 +55,7 @@ else:
           +str(nimages))
 
 # Set up job wall time information
-web_walltime = '1080'
+web_walltime = '300'
 walltime_seconds = datetime.timedelta(minutes=int(web_walltime)) \
         .total_seconds()
 walltime = (datetime.datetime.min

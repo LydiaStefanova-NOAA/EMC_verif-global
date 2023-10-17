@@ -33,8 +33,8 @@ export RUN_GRID2GRID_STEP1="YES"
 export RUN_GRID2GRID_STEP2="NO"
 export RUN_GRID2OBS_STEP1="YES"
 export RUN_GRID2OBS_STEP2="NO"
-export RUN_PRECIP_STEP1="NO"
-export RUN_PRECIP_STEP2="YES"
+export RUN_PRECIP_STEP1="YES"
+export RUN_PRECIP_STEP2="NO"
 export RUN_SATELLITE_STEP1="NO"
 export RUN_SATELLITE_STEP2="NO"
 export RUN_FIT2OBS_PLOTS="NO"
@@ -56,16 +56,16 @@ export RUN_MAPSDA="NO"
 #
 
 export model_list="GFSv16 HR2"
-export model_dir_list="/lfs/h2/emc/couple/noscrub/$USER/archive /lfs/h2/emc/couple/noscrub/$USER/archive"
-export model_stat_dir_list="/lfs/h2/emc/couple/noscrub/$USER/statclean /lfs/h2/emc/couple/noscrub/$USER/statclean"
+export model_dir_list="/scratch1/NCEPDEV/climate/$USER/ARCHIVE /scratch1/NCEPDEV/climate/$USER/ARCHIVE"
+export model_stat_dir_list="/scratch1/NCEPDEV/climate/$USER/statclean /scratch1/NCEPDEV/climate/$USER/statclean"
 export model_file_format_list="pgbf{lead?fmt=%2H}.gfs.{init?fmt=%Y%m%d%H}.grib2 pgbf{lead?fmt=%2H}.gfs.{init?fmt=%Y%m%d%H}.grib2"
 export model_data_run_hpss="NO"
 export model_hpss_dir_list="/NCEPPROD/hpssprod/runhistory /NCEPPROD/hpssprod/runhistory"
 export hpss_walltime="10"
 
 export model_list="HR2"
-export model_dir_list="/lfs/h2/emc/couple/noscrub/$USER/archive"
-export model_stat_dir_list="/lfs/h2/emc/couple/noscrub/$USER/statclean"
+export model_dir_list="/scratch1/NCEPDEV/climate/$USER/ARCHIVE"
+export model_stat_dir_list="/scratch1/NCEPDEV/climate/$USER/statclean"
 export model_file_format_list="pgbf{lead?fmt=%2H}.gfs.{init?fmt=%Y%m%d%H}.grib2"
 export model_data_run_hpss="NO"
 export model_hpss_dir_list="/NCEPPROD/hpssprod/runhistory"
@@ -93,10 +93,7 @@ export verifytype="all"
 ## OUTPUT DATA SETTINGS
 #OUTPUTROOT: base output directory
 #export OUTPUTROOT="/lfs/h2/emc/couple/noscrub/$USER/${verifytype}_step1_${model_list}_${start_date}_byINIT"
-export OUTPUTROOT="/lfs/h2/emc/couple/noscrub/$USER/clean_${verifytype}_step1_${model_list}_${start_date}_byINIT_last"
-#
-#export OUTPUTROOT="/lfs/h2/emc/couple/noscrub/$USER/${verifytype}_step2_both_${start_date}_byINIT"
-
+export OUTPUTROOT="/scratch1/NCEPDEV/climate/$USER/test_${verifytype}_step1_${model_list}_${start_date}_byINIT"
 
 ## WEB SETTINGS
 #SEND2WEB:    whether or not to send maps to webhost
